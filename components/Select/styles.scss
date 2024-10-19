@@ -1,0 +1,15 @@
+.rc-virtual-list-holder-inner {
+  gap: 4px;
+}
+
+.ant-select {
+  &-item-option-disabled {
+    cursor: default !important;
+    background-color: #f5f5f5;
+  }
+
+  &-selection-item-content {
+    line-height: 1 !important;
+    margin-top: 2px;
+  }
+}
