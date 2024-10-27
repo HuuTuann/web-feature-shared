@@ -3,6 +3,7 @@ import {
   Table as TableCore,
   TablePaginationConfig as TablePaginationConfigCore,
 } from "antd";
+// import { useStyle } from "./helpers";
 import "./styles.scss";
 
 export const Table = <Type extends object>({
@@ -12,6 +13,8 @@ export const Table = <Type extends object>({
   onChange,
   ...props
 }: TableProps<Type>) => {
+  // const styles = useStyle();
+
   return (
     <TableCore
       columns={columns}
@@ -28,6 +31,8 @@ export const Table = <Type extends object>({
         },
         ...pagination,
       }}
+      // className={styles.customTable}
+      scroll={{ x: "max-content" }}
       {...props}
     />
   );

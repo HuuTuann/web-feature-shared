@@ -2,3 +2,8 @@ export * from "./Tag";
 export * from "./Table";
 export * from "./Select";
 export * from "./Button";
+export * from "./Modal";
+export * from "./Dragger";
+export * from "./InputNumber";
+export * from "./Row";
+export * from "./Col";
