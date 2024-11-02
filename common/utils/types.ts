@@ -13,6 +13,13 @@ export interface PageResponseType<T> {
   hasPreviousPage?: boolean;
 }
 
+export interface ResponseType<T> {
+  data: T;
+  code?: number;
+  success?: boolean;
+  timestamp?: string;
+}
+
 export interface TableParams {
   pageNo?: number;
   pageSize?: number;
