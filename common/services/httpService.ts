@@ -1,11 +1,12 @@
 import axios from "axios";
 import { getAdminCookie } from "@/modules/web-feature-shared";
 import { isEmpty } from "lodash";
+import { removeAdminCookie } from "@/modules/web-feature-shared";
 
 const publicPaths = ["/login"];
 
 export const httpService = axios.create({
-  baseURL: process.env.WEB_URL,
+  baseURL: process.env.NEXT_PUBLIC_WEB_URL,
   headers: {
     "Content-Type": "application/json",
   },
@@ -37,6 +38,7 @@ httpService.interceptors.response.use(
   (response) => response?.data,
   (error) => {
     if (error?.response?.status === 401) {
+      removeAdminCookie();
       window.location.href = "/login";
     }
     return Promise.reject(error);

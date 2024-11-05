@@ -6,13 +6,38 @@
       0 20px 25px -5px rgb(0 0 0 / 0.1),
       0 8px 10px -6px rgb(0 0 0 / 0.1);
 
-    &-thead {
-      background-color: #eceef0;
+    &-thead .ant-table-cell {
+      background-color: #edeff1 !important;
+    }
+
+    .ant-table-expanded-row .ant-table-cell {
+      background-color: #fff;
+    }
+
+    tr.ant-table-expanded-row:hover > td {
+      background: #fff;
     }
 
     &-content {
       background: white;
       overflow: hidden;
+    }
+
+    &-cell {
+      background-color: #fff;
+
+      .ant-spin-container {
+        padding: 0px;
+
+        & > .ant-table {
+          border: 1px solid #f0f0f0;
+          box-shadow: none;
+        }
+
+        .ant-pagination {
+          display: none;
+        }
+      }
     }
   }
 

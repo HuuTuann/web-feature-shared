@@ -7,3 +7,4 @@ export * from "./Dragger";
 export * from "./InputNumber";
 export * from "./Row";
 export * from "./Col";
+export * from "./PreviewImage";
