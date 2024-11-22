@@ -2,7 +2,7 @@ import { Button } from "@/modules/web-feature-shared/components/Button";
 import { FileImageOutlined } from "@ant-design/icons";
 import { Image } from "antd";
 import React, { useState } from "react";
-
+import "./styles.scss";
 type Props = {
   url: string;
 };

@@ -10,6 +10,14 @@
       background-color: #edeff1 !important;
     }
 
+    &-tbody {
+      .ant-table-row {
+        .ant-table-cell-row-hover {
+          background: #eef6ff !important;
+        }
+      }
+    }
+
     .ant-table-expanded-row .ant-table-cell {
       background-color: #fff;
     }
