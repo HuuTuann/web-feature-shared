@@ -15,6 +15,7 @@ export const Tag = ({
         fontWeight: 600,
         borderRadius: 16,
         padding: "1px 16px 3px",
+        marginRight: 0,
       }}
     >
       {children}
@@ -33,19 +34,19 @@ type TagProps = {
 
 const variantStyles = {
   default: {
-    backgroundColor: "var(--bg-primary)",
-    color: "var(--primary)",
+    backgroundColor: "var(--color-bg-primary)",
+    color: "var(--color-primary)",
   },
   success: {
-    backgroundColor: "var(--bg-success)",
-    color: "var(--success)",
+    backgroundColor: "var(--color-bg-success)",
+    color: "var(--color-success)",
   },
   danger: {
-    backgroundColor: "var(--bg-danger)",
-    color: "var(--danger)",
+    backgroundColor: "var(--color-bg-danger)",
+    color: "var(--color-danger)",
   },
   transfer: {
-    backgroundColor: "var(--bg-warning)",
-    color: "var(--warning)",
+    backgroundColor: "var(--color-bg-warning)",
+    color: "var(--color-warning)",
   },
 };
